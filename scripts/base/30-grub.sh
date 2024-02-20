@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-MODULES="ext2 part_gpt search"
+MODULES="ext2 part_gpt btrfs search"
 
 mkdir -p /boot/efi
 
