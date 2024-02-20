@@ -94,7 +94,7 @@ make_image() {
     rm -f "$img/root.img"
     truncate -s "${size}M" "$img/root.img"
     echo "### Making filesystem..."
-    mkfs.ext4 -O '^metadata_csum' -U "$ROOT_UUID" -L "asahi-root" "$img/root.img"
+    mkfs.btrfs -U "$ROOT_UUID" -L "asahi-root" "$img/root.img"
     echo "### Loop mounting..."
     mount -o loop "$img/root.img" "$IMG"
     echo "### Copying files..."
