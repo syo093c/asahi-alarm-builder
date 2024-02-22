@@ -3,7 +3,7 @@
 sed -i -e 's/^HOOKS=(base udev/HOOKS=(base asahi udev/' \
 	/etc/mkinitcpio.conf
 
-# btrfs
+# add btrfs support for initramfs
 sed -i -e 's/^MODULES=(/MODULES=(btrfs/' \
 	/etc/mkinitcpio.conf
 

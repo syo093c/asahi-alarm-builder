@@ -1,6 +1,7 @@
 #!/bin/sh
 set -e
 
+# add btrfs support for grub
 MODULES="ext2 part_gpt btrfs search"
 
 mkdir -p /boot/efi
