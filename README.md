@@ -8,6 +8,15 @@ To support btrfs, you need
 
 Note that, not add kernel support btrfs.
 
+---
+The install script will just `dd` the iamge to disk parts, beacuase of
+the lack of support of booting from usb device.
+
+Just like Ghost Recover in Windows, this kind of installer is very hard to custermize,
+you need to build a whole brand new image for even a little change.
+
+---
+
 After you build the image, them download install script from asahilinux.org.
 Modified the data_json to local file, them modified the json file, add image (http) path
 to it.
@@ -17,6 +26,7 @@ local laptop.
 The install is written by python(it is easy to modified), but install script will download it from internet.
 So, hold a httpd server by yourself is the best choice.
 
+---
 
 Asahi linux NOT support the following things at 2024.3.1
 1. usb-C
